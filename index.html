@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2 class="form-heading">Registration Form</h2>
+    <form class="form-box">
+
+      <div class="input-group">
+        <input type="text" name="fullname" required />
+        <label>Full Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="tel" name="contact" required />
+        <label>Contact Number</label>
+      </div>
+
+      <div class="input-group">
+        <textarea name="address" rows="3" required></textarea>
+        <label>Address</label>
+      </div>
+
+      <div class="input-group">
+        <input type="text" name="company" required />
+        <label>Company Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" name="email" required />
+        <label>Email Address</label>
+      </div>
+
+      <div class="input-group">
+        <select name="department" required>
+          <option value="" disabled selected hidden></option>
+          <option value="HR">HR</option>
+          <option value="Sales">Sales</option>
+          <option value="Development">Development</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Others">Others</option>
+        </select>
+        <label>Department</label>
+      </div>
+
+      <div class="gender-group">
+        <label>Gender:</label>
+        <div class="options">
+          <label><input type="radio" name="gender" value="male" required> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+          <label><input type="radio" name="gender" value="none"> Prefer not to say</label>
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
